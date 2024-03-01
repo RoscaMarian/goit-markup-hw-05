@@ -330,21 +330,88 @@ background: #fff;
     padding-left: 8pc;
 }
 <!--PORTOFOLIO-->
-.top-logo {
-    border-bottom: 1px solid #e7e9fc;
-    margin: 0 auto;
-    height: 72px;
-    display: flex;    
+.buttons {
+    width: 601px;
+    height: 48px;
 }
-.top-nawv {
+.filter-button1 {
+    border: 1px solid var(--cornflower);
+    border-radius: 4px;
+    padding: 12px 24px;
+    width: 69px;
+    height: 48px;
+    background: #E7E9FC;    
+}
+.filter-button2 {
+    border: 1px solid var(--cornflower);
+    border-radius: 4px;
+    padding: 12px 24px;
+    width: 116px;
+    height: 48px;
+    background: #E7E9FC;    
+}
+.filter-button3 {
+    border: 1px solid var(--cornflower);
+    border-radius: 4px;
+    padding: 12px 24px;
+    width: 78px;
+    height: 48px;
+    background: #E7E9FC;
+}
+.filter-button4 {
+    border: 1px solid var(--cornflower);
+    border-radius: 4px;
+    padding: 12px 24px;
+    width: 116px;
+    height: 48px;    
+    background: #E7E9FC;    
+}
+.filter-button5 {
+    border: 1px solid var(--cornflower);
+    border-radius: 4px;
+    padding: 12px 24px;
+    width: 126px;
+    height: 48px;
+    background: #E7E9FC; 
+}
+.button-bar ul {
     display: flex;
-    justify-content: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42; 
-    width: 261px;
-    height: 24px;   
+    justify-content: space-between;
+    width: 601px;
+    height: 48px; 
+    padding-left: 40pc; 
+    margin-top: 8pc;  
 }
+.cardrow {
+    display: flex;
+    justify-content: center; 
+    padding-top: 5pc;
+    width: 1124px;
+    height: 420px;   
+    margin: 0 auto; 
+    list-style-type: none;
+    align-items: center;
+    margin-top: 7pc;
+} 
+.h3p {
+    padding: 0px 16px;
+    width: 360px;
+    height: 56px;
+
+    } 
+.cardrow1 {
+    display: flex;
+    justify-content: center; 
+    padding-top: 5pc;
+    width: 1124px;
+    height: 420px;   
+    margin: 0 auto; 
+    list-style-type: none;
+    align-items: center;
+    margin-bottom: 12pc; 
+    margin-top: 7pc;   
+}
+.footer {
+    height: 390px
+}
+
