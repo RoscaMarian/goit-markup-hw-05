@@ -32,21 +32,29 @@
 }
 
 .main-contacts :hover {
-    background-color: #404BBF;
+    color: #404BBF;
     cursor: pointer;
 }
 
-.top-nav  :hover {
-
+.top-nav :hover {
     cursor: pointer;
 }
+
 .top-nav {
     padding-right: 600px;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 .text {
     font-style: normal;
-
 }
 
 .container {
@@ -65,17 +73,6 @@ ul {
 .main-contacts {
     display: flex;
     flex-wrap: wrap;
-}
-
-.top-nav {
-    display: flex;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    margin: 0 auto;
 }
 
 .top-nav li,
@@ -108,8 +105,8 @@ ul {
     font-size: 18px;
     letter-spacing: 0.03em;
 }
-.main-section {
 
+.main-section {
     height: 600px;
     background: #2e2f42;
     display: flex;
@@ -130,6 +127,7 @@ ul {
     width: 54pc;
     margin-left: 500px;
 }
+
 .service-button {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #4d5ae5;
@@ -141,15 +139,18 @@ ul {
     cursor: pointer;
     color: white;
 }
+
 .content {
 
     height: 2592px;
     margin: 0 auto;
 
 }
+
 .main-content {
     margin: 0 auto;
 }
+
 .cards-spacing ul li h4 {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -158,6 +159,7 @@ ul {
     letter-spacing: 0.02em;
     color: #2e2f42;
 }
+
 .cards-spacing ul li p {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -166,6 +168,7 @@ ul {
     letter-spacing: 0.02em;
     color: #434455;
 }
+
 .text-cards {
     display: flex;
     justify-content: center;
@@ -174,22 +177,26 @@ ul {
     height: 104px;
     margin-top: 5pc;
 }
+
 .cards-spacing ul {
     display: flex;
     justify-content: flex-end;
 }
+
 .images-card {
     display: flex;
     justify-content: center;
 }
+
 .images ul {
     width: 1128px;
     height: 409px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;    
+    align-items: flex-end;
 }
-.title h1{
+
+.title h1 {
     display: flex;
     justify-content: center;
     font-family: "Roboto", sans-serif;
@@ -199,27 +206,32 @@ ul {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
-    color: #2e2f42; 
-    margin-left: 5pc; 
-    margin: 0 auto; 
+    color: #2e2f42;
+    margin-left: 5pc;
+    margin: 0 auto;
 }
+
 .images {
     margin-top: 10pc;
 }
+
 .tird-container {
     margin: 0 auto;
     height: 732px;
-    background: #f4f4fd;    
+    background: #f4f4fd;
 }
+
 .last-section {
     display: flex;
     justify-content: center;
 
 }
+
 .img {
     width: 264px;
-    height: 260px;    
+    height: 260px;
 }
+
 .name {
     font-family: "Roboto", sans-serif;
     font-weight: 600;
@@ -229,6 +241,7 @@ ul {
     text-align: center;
     color: #2e2f42;
 }
+
 .job-description {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -236,42 +249,47 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
-    color: #434455; 
+    color: #434455;
     display: flex;
-    justify-content: center;   
+    justify-content: center;
 }
+
 .teamcard-1 {
     border-radius: 0 0 4px 4px;
     padding: 0px 0px 32px 0px;
     width: 264px;
     height: 380px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-background: #fff;  
+    background: #fff;
 }
+
 .teamcard-2 {
     border-radius: 0 0 4px 4px;
     padding: 0px 0px 32px 0px;
     width: 264px;
     height: 380px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-background: #fff; 
+    background: #fff;
 }
+
 .teamcard-3 {
     border-radius: 0 0 4px 4px;
     padding: 0px 0px 32px 0px;
     width: 264px;
     height: 380px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-background: #fff;     
+    background: #fff;
 }
+
 .teamcard-4 {
     border-radius: 0 0 4px 4px;
     padding: 0px 0px 32px 0px;
     width: 264px;
     height: 380px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-background: #fff;     
+    background: #fff;
 }
+
 .our-team {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -284,16 +302,19 @@ background: #fff;
     height: 10px;
     margin-left: 7pc;
     margin-top: 12pc;
- 
+
 }
+
 .last-section {
     display: flex;
     justify-content: center;
     margin-right: 40px;
 }
+
 .last-section ul {
     margin-top: 5pc;
 }
+
 .footer {
     margin: 0 auto;
     height: 312px;
@@ -302,6 +323,7 @@ background: #fff;
     justify-content: flex-start;
     align-items: baseline;
 }
+
 .footer-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 800;
@@ -312,47 +334,54 @@ background: #fff;
     display: flex;
     text-decoration: none;
 }
+
 .left-blue {
     color: #4d5ae5;
 }
+
 .right-black {
     color: #f4f4fd;
 }
+
 .footer p {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #f4f4fd;    
+    color: #f4f4fd;
 }
+
 .footer-container {
     width: 264px;
-    height: 112px; 
+    height: 112px;
     padding-top: 7pc;
     padding-left: 8pc;
 }
-<!--PORTOFOLIO-->
-.buttons {
+
+< !--PORTOFOLIO-->.buttons {
     width: 601px;
     height: 48px;
 }
+
 .filter-button1 {
     border: 1px solid var(--cornflower);
     border-radius: 4px;
     padding: 12px 24px;
     width: 69px;
     height: 48px;
-    background: #E7E9FC;    
+    background: #E7E9FC;
 }
+
 .filter-button2 {
     border: 1px solid var(--cornflower);
     border-radius: 4px;
     padding: 12px 24px;
     width: 116px;
     height: 48px;
-    background: #E7E9FC;    
+    background: #E7E9FC;
 }
+
 .filter-button3 {
     border: 1px solid var(--cornflower);
     border-radius: 4px;
@@ -361,71 +390,81 @@ background: #fff;
     height: 48px;
     background: #E7E9FC;
 }
+
 .filter-button4 {
     border: 1px solid var(--cornflower);
     border-radius: 4px;
     padding: 12px 24px;
     width: 116px;
-    height: 48px;    
-    background: #E7E9FC;    
+    height: 48px;
+    background: #E7E9FC;
 }
+
 .filter-button5 {
     border: 1px solid var(--cornflower);
     border-radius: 4px;
     padding: 12px 24px;
     width: 126px;
     height: 48px;
-    background: #E7E9FC; 
+    background: #E7E9FC;
 }
+
 .button-bar ul {
     display: flex;
     justify-content: space-between;
     width: 601px;
-    height: 48px; 
-    padding-left: 40pc; 
-    margin-top: 8pc;  
+    height: 48px;
+    padding-left: 40pc;
+    margin-top: 8pc;
 }
+
 .cardrow {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     padding-top: 5pc;
     width: 1124px;
-    height: 420px;   
-    margin: 0 auto; 
+    height: 420px;
+    margin: 0 auto;
     list-style-type: none;
     align-items: center;
     margin-top: 7pc;
-} 
+}
+
 .h3p {
     padding: 0px 16px;
     width: 360px;
     height: 56px;
 
-    } 
+}
+
 .cardrow1 {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     padding-top: 5pc;
     width: 1124px;
-    height: 420px;   
-    margin: 0 auto; 
+    height: 420px;
+    margin: 0 auto;
     list-style-type: none;
     align-items: center;
-    margin-bottom: 12pc; 
-    margin-top: 7pc;   
+    margin-bottom: 12pc;
+    margin-top: 7pc;
 }
+
 .footer {
     height: 390px
 }
+
 svg {
     width: 20px;
     height: 20px;
-  } 
-  .icons-list {
+}
+
+.icons-list {
     display: flex;
     justify-content: space-around;
-  }
-  .icons-list a {
+}
+
+.icons-list a {
     width: 40px;
     height: 40px;
     background: #4d5ae5;
@@ -435,10 +474,13 @@ svg {
     align-items: center;
     display: flex;
     color: white;
-  }.icons-list :hover,
-  .icons-list :focus {
+}
+
+.icons-list :hover,
+.icons-list :focus {
     background-color: #31D0AA;
-  }
+}
+
 .customers {
     display: flex;
     justify-content: center;
@@ -450,22 +492,25 @@ svg {
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
-    padding-bottom: 3pc; 
-    padding-left: 4pc;   
+    padding-bottom: 3pc;
+    padding-left: 4pc;
 }
-.clients svg{
+
+.clients svg {
     width: 168px;
-    height: 88px; 
+    height: 88px;
     color: #8E8F99;
     border: 1px solid black;
     margin-right: 20px;
     cursor: pointer;
 }
+
 .clients {
     display: flex;
     justify-content: center;
     margin-left: 6pc;
 }
+
 .container-customers {
     display: flex;
     justify-content: center;
@@ -473,20 +518,49 @@ svg {
     padding-bottom: 10pc;
     padding-top: 5pc;
 }
+
 .clients :hover,
 .clients :focus {
     color: #404BBF;
 }
+
 .footer-links {
     width: 208px;
     height: 84px;
     padding-left: 10pc;
 }
+
 .footer-links h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #fff; 
+    color: #fff;
+}
+
+.top-buttons {
+    width: 261px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 5pc
+}
+
+.active {
+    border-bottom: 2px solid;
+    padding-bottom: 15px;
+    border-radius: 2px;
+    width: 48px;
+    height: 4px;
+    color: #404bbf;
+}
+
+.main-contacts :hover,
+.main-contacts :focus {
+    border-bottom: 2px solid;
+    padding-bottom: 15px;
+    border-radius: 2px;
+    width: 48px;
+    height: 4px;
+    color: #404bbf
 }
