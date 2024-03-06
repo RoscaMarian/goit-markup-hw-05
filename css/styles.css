@@ -153,7 +153,7 @@ ul {
 .cards-spacing ul li h4 {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
@@ -222,8 +222,8 @@ ul {
 }
 .name {
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 600;
+    font-size: 17px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: center;
@@ -232,7 +232,7 @@ ul {
 .job-description {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
@@ -289,6 +289,7 @@ background: #fff;
 .last-section {
     display: flex;
     justify-content: center;
+    margin-right: 40px;
 }
 .last-section ul {
     margin-top: 5pc;
@@ -296,8 +297,10 @@ background: #fff;
 .footer {
     margin: 0 auto;
     height: 312px;
-    background: #2e2f42;  
-    margin: 0 auto;
+    background: #2e2f42;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
 }
 .footer-logo {
     font-family: "Raleway", sans-serif;
@@ -414,4 +417,76 @@ background: #fff;
 .footer {
     height: 390px
 }
-
+svg {
+    width: 20px;
+    height: 20px;
+  } 
+  .icons-list {
+    display: flex;
+    justify-content: space-around;
+  }
+  .icons-list a {
+    width: 40px;
+    height: 40px;
+    background: #4d5ae5;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+  }.icons-list :hover,
+  .icons-list :focus {
+    background-color: #31D0AA;
+  }
+.customers {
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    color: #2e2f42;
+    padding-bottom: 3pc; 
+    padding-left: 4pc;   
+}
+.clients svg{
+    width: 168px;
+    height: 88px; 
+    color: #8E8F99;
+    border: 1px solid black;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.clients {
+    display: flex;
+    justify-content: center;
+    margin-left: 6pc;
+}
+.container-customers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 10pc;
+    padding-top: 5pc;
+}
+.clients :hover,
+.clients :focus {
+    color: #404BBF;
+}
+.footer-links {
+    width: 208px;
+    height: 84px;
+    padding-left: 10pc;
+}
+.footer-links h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff; 
+}
