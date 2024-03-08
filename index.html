@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+d<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,11 +18,11 @@
 <body class="content" style="width: 1200;">
   <!--top line-->
   <header>
-    <div class="container">
-      <div class="container-logo">
-        <a href="/index.html"><span class="logo-text">WEB</span>STUDIO</a>
+    <nav class="fixed">
+      <div class="container">
+        <div class="container-logo">
+          <a href="/index.html"><span class="logo-text">WEB</span>STUDIO</a>
       </div>
-    <nav>
       <div class="top-buttons" >
         <ul class="top-nav">
           <li><a href="index.html" class="active">Studio</a></li>
@@ -30,23 +30,23 @@
           <li class="button">Contacts</li>
         </ul>
       </div>
+      <div>
+        <ul class="main-contacts">
+          <li><a href="mailto" info@devstudio.com>info@devstudio.com</a></li>
+          <li><a href="tel" +11 (000) 111-11-11>+11 (000) 111-11-11</a></li>
+        </ul>
+      </div>
     </nav>
-    <div>
-      <ul class="main-contacts">
-        <li><a href="mailto" info@devstudio.com>info@devstudio.com</a></li>
-        <li><a href="tel" +11 (000) 111-11-11>+11 (000) 111-11-11</a></li>
-      </ul>
     </div>
-    </div>
-    <section class="main-section">
+    <section class="main-section" >
       <div class="h1-text">
         <h1>Effective Solutions for Your Business</h1>
       </div>
       <section>
         <button type="button" class="service-button">Order Service</button>
       </section>
+    </section>
   </header>
-  </section>
   <!--main-->
   <main class="main-content">
     <section class="text-cards" style="width: 1200px;">
@@ -79,16 +79,43 @@
     </section>
     <!--second section-->
     <section class="images-card" style="width: 1200;">
-      <div class="images">
-        <div class="title">
+    <div class="images">
+      <div class="title">
           <h1>what are we doing</h1>
+      </div>  
           <ul>
-            <li><img src="images\Rectangle 71 (1).jpg" alt="" /></li>
-            <li><img src="images\Rectangle 71 (2).jpg" alt="" /></li>
-            <li><img src="images\Rectangle 71 (3).jpg" alt="" /></li>
-          </ul>
+            <li>
+              <div class=img-overlay>
+                <img src="images\Rectangle 71 (1).jpg" alt="" />
+                <div class="overlay">
+                  <p>14 Stylish and User-Friendly App Design Concepts ·
+                     Task Manager App · Calorie Tracker App ·
+                     Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                </div>
+              </div>
+              </li>
+            <li>
+              <div class="img-overlay">
+                <img src="images\Rectangle 71 (2).jpg" alt="" />             
+                <div class="overlay">
+                  <p>14 Stylish and User-Friendly App Design Concepts ·
+                     Task Manager App · Calorie Tracker App ·
+                     Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                </div>
+              </div>
+            </li>
+            <li>
+        <div class="img-overlay">
+              <img src="images\Rectangle 71 (3).jpg" alt="" />
+          <div class="overlay">
+            <p>14 Stylish and User-Friendly App Design Concepts ·
+               Task Manager App · Calorie Tracker App ·
+               Exotic Fruit Ecommerce App · Cloud Storage App</p>
+          </div>
         </div>
-      </div>
+        </li>
+      </ul>        
+    </div>
     </section>
     <!--tird section-->
     <section class="tird-container" style="width: 1200px;">
@@ -238,7 +265,7 @@
       "width: 1128px;
       height: 207px;">
       <h1 class="customers">Customers</h1>
-      <div class="clients" style="1200px">
+      <div class="clients">
           <svg>
             <use href=icons\clientsl-defs.svg#icon-Client-1></use>
           </svg>
