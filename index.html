@@ -1,4 +1,4 @@
-d<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,61 +15,84 @@ d<!DOCTYPE html>
     rel="stylesheet">
 </head>
 
-<body class="content" style="width: 1200;">
-  <!--top line-->
+<body 
+class="content" 
+style="width: 1200;">
+<!--top line-->
+<nav class="fixed">
+  <div class="container">
+    <div class="container-logo">
+      <a href="/index.html"><span class="logo-text">WEB</span>STUDIO</a>
+  </div>
+  <div class="top-buttons" >
+    <ul class="top-nav">
+      <li><a href="index.html" class="active">Studio</a></li>
+      <li><a href="portofolio.html"> Portofolio</a></li>
+      <li class="button">Contacts</li>
+    </ul>
+  </div>
+  <div>
+    <ul class="main-contacts">
+      <li><a href="mailto" info@devstudio.com>info@devstudio.com</a></li>
+      <li><a href="tel" +11 (000) 111-11-11>+11 (000) 111-11-11</a></li>
+    </ul>
+  </div>
+</div>
+</nav>
   <header>
-    <nav class="fixed">
-      <div class="container">
-        <div class="container-logo">
-          <a href="/index.html"><span class="logo-text">WEB</span>STUDIO</a>
-      </div>
-      <div class="top-buttons" >
-        <ul class="top-nav">
-          <li><a href="index.html" class="active">Studio</a></li>
-          <li><a href="portofolio.html"> Portofolio</a></li>
-          <li class="button">Contacts</li>
-        </ul>
-      </div>
-      <div>
-        <ul class="main-contacts">
-          <li><a href="mailto" info@devstudio.com>info@devstudio.com</a></li>
-          <li><a href="tel" +11 (000) 111-11-11>+11 (000) 111-11-11</a></li>
-        </ul>
-      </div>
-    </nav>
-    </div>
-    <section class="main-section" >
+ <!--hero-->
+    <section class="main-section">
+      <div class="background">
       <div class="h1-text">
         <h1>Effective Solutions for Your Business</h1>
       </div>
-      <section>
-        <button type="button" class="service-button">Order Service</button>
-      </section>
+      <div>
+        <button type="button" class="service-button" data-modal-open>Order Service</button>
+      </div>
+      </div>
     </section>
   </header>
+  <div class="modal is-hidden" data-modal>
+    <div class="modal-content">
+      <button class="close-btn"data-modal-close>&times;</button>
+      continut modal
+    </div>
+  </div>
   <!--main-->
   <main class="main-content">
     <section class="text-cards" style="width: 1200px;">
       <div class="cards-spacing">
         <ul>
           <li>
+            <svg>
+              <use href=icons\svgeez.svg#icon--1></use>
+            </svg>
             <h4>Strategy</h4>
             <p>Our goal is to identify the business
               problem to walk away with the perfect
               and creative solution. </p>
           </li>
           <li>
+            <svg>
+              <use href=icons\svgeez.svg#icon--2></use>
+            </svg>
             <h4>Punctuality</h4>
             <p>Bring the key message to the brand's audience for the
               best price within the shortest possible time.</p>
           </li>
           <li>
+            <svg>
+              <use href=icons\svgeez.svg#icon--3></use>
+            </svg>
             <h4>Dliigence</h4>
             <p>Research and confirm brands that present the
               strongest digital growth opportunities and minimize risk.
             </p>
           </li>
           <li>
+            <svg>
+              <use href=icons\svgeez.svg#icon--4></use>
+            </svg>
             <h4>Technologies</h4>
             <p>Design practice focused on digital experiences.
               We bring forth a deep passion for problem-solving.</p>
@@ -85,34 +108,13 @@ d<!DOCTYPE html>
       </div>  
           <ul>
             <li>
-              <div class=img-overlay>
                 <img src="images\Rectangle 71 (1).jpg" alt="" />
-                <div class="overlay">
-                  <p>14 Stylish and User-Friendly App Design Concepts ·
-                     Task Manager App · Calorie Tracker App ·
-                     Exotic Fruit Ecommerce App · Cloud Storage App</p>
-                </div>
-              </div>
               </li>
             <li>
-              <div class="img-overlay">
                 <img src="images\Rectangle 71 (2).jpg" alt="" />             
-                <div class="overlay">
-                  <p>14 Stylish and User-Friendly App Design Concepts ·
-                     Task Manager App · Calorie Tracker App ·
-                     Exotic Fruit Ecommerce App · Cloud Storage App</p>
-                </div>
-              </div>
             </li>
             <li>
-        <div class="img-overlay">
               <img src="images\Rectangle 71 (3).jpg" alt="" />
-          <div class="overlay">
-            <p>14 Stylish and User-Friendly App Design Concepts ·
-               Task Manager App · Calorie Tracker App ·
-               Exotic Fruit Ecommerce App · Cloud Storage App</p>
-          </div>
-        </div>
         </li>
       </ul>        
     </div>
@@ -343,6 +345,9 @@ d<!DOCTYPE html>
 </div>
     </section>
   </footer>
+  <script>
+    feather.replace();
+  </script>
+  <script src="javascript.js\modal.js"></script>
 </body>
-
 </html>

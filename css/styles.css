@@ -63,8 +63,10 @@
     align-items: center;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     margin: 0 auto;
-    width: 1440px;
+    width: 1200px;
     height: 78px;
+    position: fixed;
+    background-color : #fff;
 }
 
 ul {
@@ -109,9 +111,7 @@ ul {
 
 .main-section {
     height: 600px;
-    background: #2e2f42;
-    display: flex;
-    justify-content: center;
+    background-color: #2E2F42;
     border-radius: 0;
     flex-direction: column;
     margin: 0 auto;
@@ -127,6 +127,8 @@ ul {
     color: #fff;
     width: 54pc;
     margin-left: 165px;
+    display: flex;
+    padding-top: 8pc;
 }
 
 .service-button {
@@ -187,6 +189,7 @@ ul {
 .images-card {
     display: flex;
     justify-content: center;
+    padding-top: 50px;
 }
 
 .images ul {
@@ -522,7 +525,7 @@ svg {
 
 .clients :hover,
 .clients :focus {
-    color: #404BBF;
+    color: #4D5AE5;
 }
 
 .footer-links {
@@ -588,3 +591,39 @@ svg {
     transform: translatey(0);
     top: 0pc;
   }
+  .is-hidden {
+    visibility: hidden;
+ }
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e2f42d2;
+}
+.modal-content {
+    margin: 0 auto;
+    padding: 16px;
+    background-color: #fff;
+    width: 50%;
+    height: 50%;
+    position: relative;
+}
+.close-btn {
+    background-color: red;
+    border-radius: 50%;
+    color: #fff;
+    outline: none;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+.text-cards svg {
+    width: 264px;
+    height: 112px;
+}
