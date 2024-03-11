@@ -613,6 +613,9 @@ svg {
     width: 50%;
     height: 50%;
     position: relative;
+    border-radius: 4px;
+    width: 408px;
+    height: 584px;
 }
 .close-btn {
     background-color: red;
