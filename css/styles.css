@@ -905,6 +905,9 @@ textarea {
     flex-wrap: wrap;
     padding-bottom: 10pc;
 }
+.content {
+    width: 1200;
+}
 .menu-toggle {
     display: none;
 }
