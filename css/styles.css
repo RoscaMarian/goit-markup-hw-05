@@ -67,6 +67,7 @@
     height: 78px;
     position: fixed;
     background-color : #fff;
+    z-index: 1;
 }
 
 ul {
@@ -115,6 +116,7 @@ ul {
     border-radius: 0;
     flex-direction: column;
     margin: 0 auto;
+    width: 1200px;
 }
 
 .h1-text {
@@ -737,6 +739,7 @@ textarea {
     display: inline-flex;
     margin-left: 15px;
 }
+
 @media only screen and (max-width: 428px) {
     .burger-logo{
         stroke: #2E2F42;
@@ -889,11 +892,11 @@ textarea {
         top: 60pc;
         right: 40px;
     }
-    
     .modal {
         width: 100%;
         height: 100%;
         z-index: 1;}
+        
     }
 
 @media only screen and (min-width: 1158px) 
@@ -905,14 +908,9 @@ textarea {
     flex-wrap: wrap;
     padding-bottom: 10pc;
 }
-.content {
-    width: 1200;
-}
+
 .menu-toggle {
     display: none;
-}
-body {
-    margin: 0 auto;
 }
 }
 .js-menu-container {
@@ -922,8 +920,8 @@ body {
     display: flex;
     flex-direction: column;
     position: fixed;
+
     top: 0;
-    right: 388px;
     z-index: 1;
     width: 428px;
     height: 796px;
