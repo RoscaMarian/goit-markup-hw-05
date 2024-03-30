@@ -63,7 +63,7 @@
     align-items: center;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     margin: 0 auto;
-    width: 1200px;
+    width: -webkit-fill-available;
     height: 78px;
     position: fixed;
     background-color : #fff;
@@ -112,11 +112,9 @@ ul {
 
 .main-section {
     height: 590px;
-    background-color: #2E2F42;
-    border-radius: 0;
     flex-direction: column;
     margin: 0 auto;
-    width: 1200px;
+
 }
 
 .h1-text {
@@ -127,10 +125,13 @@ ul {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    width: 54pc;
-    margin-left: 165px;
+
     display: flex;
     padding-top: 8pc;
+}
+.btn-srvc {
+    display: flex;
+    justify-content: center;
 }
 
 .service-button {
@@ -140,7 +141,6 @@ ul {
     padding: 16px 32px;
     width: 169px;
     height: 56px;
-    margin-left: 500px;
     cursor: pointer;
     color: white;
 }
@@ -152,41 +152,15 @@ ul {
 
 }
 
-.main-content {
-    margin: 0 auto;
-}
 
-.cards-spacing ul li h4 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-.cards-spacing ul li p {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
 
 .text-cards {
     display: flex;
     justify-content: center;
-    margin-left: 7pc;
-    margin: 0 auto;
     height: 104px;
-    margin-top: 5pc;
 }
 
-.cards-spacing ul {
-    display: flex;
-    justify-content: flex-end;
-}
+
 
 .images-card {
     display: flex;
@@ -195,7 +169,7 @@ ul {
 }
 
 .images ul {
-    width: 1128px;
+
     height: 409px;
     display: flex;
     justify-content: space-between;
@@ -369,6 +343,10 @@ ul {
     width: 601px;
     height: 48px;
 }
+.background {
+    background-color: #2E2F42;
+    border-radius: 0;
+}
 
 .filter-button1 {
     border: 1px solid var(--cornflower);
@@ -428,7 +406,7 @@ ul {
     display: flex;
     justify-content: center;
     padding-top: 5pc;
-    width: 1124px;
+
     height: 420px;
     margin: 0 auto;
     list-style-type: none;
@@ -447,7 +425,7 @@ ul {
     display: flex;
     justify-content: center;
     padding-top: 5pc;
-    width: 1124px;
+
     height: 420px;
     margin: 0 auto;
     list-style-type: none;
@@ -511,13 +489,9 @@ svg {
     cursor: pointer;
 }
 
-.clients {
-    display: flex;
-    justify-content: center;
-    margin-left: 6pc;
-}
-.clients :hover,
-.clients :focus {
+
+
+.container-customers svg:hover {
     color: #4D5AE5;
 }
 
@@ -587,8 +561,7 @@ svg {
   .is-hidden {
     visibility: hidden;
  }
-
-.modal {
+ .modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -599,6 +572,7 @@ svg {
     align-items: center;
     background-color: #2e2f42d2;
 }
+
 .modal-content {
     margin: 0 auto;
     padding: 16px;
@@ -606,7 +580,7 @@ svg {
     position: relative;
     border-radius: 4px;
     width: 408px;
-    height: 584px;
+    height: 680px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -741,12 +715,39 @@ textarea {
 }
 
 @media only screen and (max-width: 428px) {
-    .burger-logo{
+    .burger-logo {
         stroke: #2E2F42;
         position: absolute;
         left: 26pc;
         width: 32px;
         height: 22px;
+    }
+    .cards-spacing svg{
+        display: none;
+    }
+
+    .cards-spacing ul li h4 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11111;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        text-align: center;
+        color: #2e2f42;
+    }
+    .cards-spacing ul{
+        display: flex;
+        padding-right: 34px;
+        justify-content: flex-start;
+        align-items: baseline;
+        align-content: stretch;
+        flex-wrap: wrap;
+    }
+    .text-cards {
+        display: flex;
+        justify-content: center;
+        height: 104px;
     }
     .top-nav, .main-contacts{
         display: none;
@@ -774,30 +775,7 @@ textarea {
         text-align: center;
         color: #fff;
     }
-    .service-button {
-        margin-left: 140px;
-    }
-    .cards-spacing svg{
-        display: none;
-    }
-    .cards-spacing ul li h4 {
-        font-family: "Roboto", sans-serif;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11111;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-        text-align: center;
-        color: #2e2f42;
-    }
-    .cards-spacing ul{
-        display: flex;
-        padding-right: 34px;
-        justify-content: flex-start;
-        align-items: baseline;
-        align-content: stretch;
-        flex-wrap: wrap;
-    }
+
     .images-card {
         display: none;
     }
@@ -858,19 +836,20 @@ textarea {
         height: 2232px;
         justify-content: space-around;
         flex-wrap: wrap;
-        display: flex;
-        align-items: flex-end;
-        align-content: flex-end;
+
     }
     .last-section {
         display: flex;
-        flex-direction: column;
+        align-items: flex-end;
+        align-content: flex-end;
+        flex-wrap: wrap;
+        margin: 0 auto;
     }
     .our-team {
         display: flex;
-        align-items: center;
-        right: 45px;
-        position: relative;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: row;
     }
     .clients{
         display: flex;
@@ -880,7 +859,6 @@ textarea {
         position: relative;
         flex-wrap: wrap;
         top: 60pc;
-        right: 68px;
     }
     .icons-list {
         position: relative;
@@ -889,29 +867,94 @@ textarea {
     }
     .customers {
         position: relative;
-        top: 60pc;
-        right: 40px;
+
     }
     .modal {
         width: 100%;
         height: 100%;
         z-index: 1;}
         
+
     }
-
-@media only screen and (min-width: 1158px) 
+    @media only screen and (min-width: 429px) and (max-width: 768px)
 {
-    .container-customers
-{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-bottom: 10pc;
-}
 
-.menu-toggle {
+    .cards-spacing svg{
+        display: none;
+    }
+    .modal {
+        width: 100%;
+        height: 100%;
+    }
+    .cards-spacing ul{
+        display: flex;
+        width: 400px;
+        height: 312px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        column-gap: 25px;}
+.images-card {
     display: none;
 }
+.tird-container {
+    width: 768px;
+    height: 1224px;
+}
+.last-section {
+    display: flex;
+    margin-right: 40px;
+    flex-wrap: wrap;
+}
+
+.cards-spacing ul p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;}
+
+
+    .footer {
+        display: flex;
+        width: 768px;
+        height: 456px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .cards-spacing li {
+        width: 356px;
+        height: 120px;  
+    }
+
+    .absolute {
+        display: flex;
+        flex-wrap: wrap;
+        height: 360px;
+        width: 580px;
+        height: 360px;
+        position: relative;
+        left: 120px;
+    }
+    .menu-toggle {
+        display: none;}
+    }
+
+@media only screen and (min-width:769px) and (max-width:2000px)
+{
+    .modal {
+        height: 100%;
+        width: 100%;
+    }
+
+    .menu-toggle {
+        display: none;}
+}
+
+
+.cards-spacing ul{
+    display: flex;
 }
 .js-menu-container {
     display: none;
@@ -920,8 +963,7 @@ textarea {
     display: flex;
     flex-direction: column;
     position: fixed;
-
-    top: 0;
+    top: 50px;
     z-index: 1;
     width: 428px;
     height: 796px;
@@ -988,3 +1030,7 @@ textarea {
     display: flex;
     justify-content: space-evenly;
 }
+.name-label:focus-within svg {
+    fill: blue;
+  }
+    

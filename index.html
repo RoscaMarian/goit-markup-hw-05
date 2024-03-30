@@ -1,6 +1,5 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +16,7 @@
 </head>
 
 <body 
-class="content" style="width: fit-content;">
+class="content" style="display: inline-block;">
 <div class="js-menu-container">
     <button class="menu-toggle js-close-menu">
       <svg
@@ -100,12 +99,12 @@ class="content" style="width: fit-content;">
 </nav>
   <header>
  <!--hero-->
-    <section class="main-section">
+    <class class="main-section">
       <header class="background">
       <div class="h1-text">
         <h1>Effective Solutions for Your Business</h1>
       </div>
-      <div>
+      <div class="btn-srvc">
         <button type="button" class="service-button" data-modal-open>Order Service</button>
         </div>
       </header>
@@ -121,9 +120,8 @@ class="content" style="width: fit-content;">
                   </use>
                 </svg>
               <input type="text" class="input" id="name" name="name"> <br>
-            </label>
-
-              <label for="phone">
+              </label>
+              <label for="phone" class="name-label">
                 Phone <br>
                 <svg class="icon-form" width="18" height="18">
                   <use href="icons\form-svg.svg#icon-Vector">
@@ -131,7 +129,7 @@ class="content" style="width: fit-content;">
                 </svg>
               <input type="phone" class="input" id="phone" name="phone"> <br>
             </label>
-              <label for="email">
+              <label for="email" class="name-label">
                 Email <br>
                 <svg class="icon-form" width="18" height="18">
                   <use href="icons\form-svg.svg#icon-Vector-1">
@@ -151,6 +149,7 @@ class="content" style="width: fit-content;">
                     </form>
           </div>
         </div>
+      </class>
   <!--main-->
   <main class="main-content">
     <section class="text-cards" ">
@@ -353,8 +352,10 @@ class="content" style="width: fit-content;">
       </div>
     </section>
     <section class=" container-customers">
-      <h1 class="customers">Customers</h1>
+      
       <div class="clients">
+        <h1 class="customers">Customers</h1>
+        <div class="absolute">
           <svg>
             <use href=icons\clientsl-defs.svg#icon-Client-1></use>
           </svg>
@@ -373,6 +374,7 @@ class="content" style="width: fit-content;">
           <svg>
             <use href=icons\clientsl-defs.svg#icon-Client-6></use>
           </svg>
+        </div>
       </div>
     </section>
   </main>
